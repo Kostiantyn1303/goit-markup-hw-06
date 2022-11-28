@@ -583,7 +583,7 @@ button {
 
 .footer-soc-box {
   margin-left: 70px;
-  margin-right: 93px;
+  margin-right: 120px;
 }
 
 .soc-footer-text {
@@ -808,10 +808,9 @@ button {
   transform: translate(-50%, -50%) scale(0);
 }
 .modal {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
   position: absolute;
-  width: 528px;
+  min-width: 528px;
   min-height: 581px;
   background-color: var(--white-color);
   border-radius: 4px;
@@ -853,7 +852,6 @@ button {
   pointer-events: none;
 }
 .modal-title {
-  padding-top: 40px;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -864,7 +862,7 @@ button {
   color: var(--secondary-text-color);
 }
 .modal-input {
-  padding-left: 5px;
+  padding-left: 42px;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -888,7 +886,7 @@ button {
 }
 .modal-icons {
   position: absolute;
-  left: 5px;
+  left: 12px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms var(--transition-timing-function);
@@ -904,14 +902,15 @@ button {
   color: var(--primary-text-color);
 }
 .modal-textarea {
-  padding: 12px 16px;
   margin-bottom: 20px;
+  padding: 12px 16px;
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
   outline: transparent;
+  transition: border-color 250ms var(--transition-timing-function);
 }
 .modal-textarea:focus,
 .modal-textarea:hover {
@@ -926,6 +925,7 @@ button {
   color: rgba(117, 117, 117, 0.5);
 }
 .check-text {
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -946,6 +946,8 @@ button {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms var(--transition-timing-function),
+    fill 250ms var(--transition-timing-function);
 }
 
 .input-checkbox:checked + .check-text span {
@@ -954,6 +956,27 @@ button {
   fill: var(--white-color);
 }
 .check-link {
-  display: block;
+  margin-left: 5px;
   color: var(--blue-color);
+}
+.modal-btn-send {
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.87;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  transition: background-color 250ms var(--transition-timing-function);
+}
+.modal-btn-send:focus,
+.modal-btn-send:hover {
+  background-color: var(--backgrount-btn-active);
 }

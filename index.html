@@ -430,22 +430,23 @@
         </div>
         <div class="footer-forms">
           <p class="footer-forms-text">Підпишіться на розсилку</p>
-          <div class="forms-wrapper">
-            <input
-              class="email-input-footer"
-              type="email"
-              name="email"
-              id="footer-email"
-              placeholder="E-mail"
-            />
-            <button type="submit" class="footer-input-btn">
-              Підписатися
-              <svg class="input-footer-icons" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
-          <form name="send-forms"></form>
+          <form name="send-forms">
+            <div class="forms-wrapper">
+              <input
+                class="email-input-footer"
+                type="email"
+                name="email"
+                id="footer-email"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="footer-input-btn">
+                Підписатися
+                <svg class="input-footer-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -458,7 +459,7 @@
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
 
-        <form class="modal-form-name">
+        <form class="modal-form">
           <label for="user-name" class="input-label">Ім'я </label>
           <div class="input-wrapper">
             <input type="text" name="name" id="user-name" class="modal-input" />
@@ -466,9 +467,6 @@
               <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
           </div>
-        </form>
-
-        <form class="modal-form-phone">
           <label for="user-phone" class="input-label">Телефон</label>
           <div class="input-wrapper">
             <input
@@ -481,9 +479,7 @@
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
           </div>
-        </form>
 
-        <form class="modal-form-mail">
           <label for="user-mail" class="input-label">Пошта </label>
           <div class="input-wrapper">
             <input
@@ -496,6 +492,7 @@
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
           </div>
+
           <div class="modal-textarea-wrapper">
             <label for="user-comment" class="input-label">Коментар</label>
             <textarea
@@ -522,6 +519,7 @@
               <a href="#" class="check-link"> Умови договору</a></label
             >
           </div>
+          <button type="submit" class="modal-btn-send">Відправити</button>
         </form>
       </div>
     </div>
