@@ -843,7 +843,7 @@ button {
 .modal-close:focus .modal-icons-close {
   fill: var(--blue-color);
 }
-.modal-icons-close:hover {
+.modal-close:hover .modal-icons-close {
   fill: var(--blue-color);
 }
 .is-hidden {
