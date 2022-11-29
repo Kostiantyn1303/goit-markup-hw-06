@@ -578,12 +578,11 @@ button {
 .footer-box {
   display: flex;
   align-items: baseline;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .footer-soc-box {
   margin-left: 70px;
-  margin-right: 120px;
 }
 
 .soc-footer-text {
@@ -626,7 +625,7 @@ button {
   fill: var(--white-color);
 }
 
-.forms-wrapper {
+.send-forms {
   display: flex;
   text-align: center;
   justify-content: center;
