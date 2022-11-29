@@ -581,10 +581,6 @@ button {
   justify-content: space-between;
 }
 
-.footer-soc-box {
-  margin-left: 70px;
-}
-
 .soc-footer-text {
   margin-bottom: 20px;
   color: var(--white-color);
